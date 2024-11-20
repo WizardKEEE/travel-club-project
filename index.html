@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Adventure Travel Club</h1>
+            <p>Begin your journey with fellow adventurers</p>
+        </header>
+        <form class="form-container">
+            <section class="personal-info">
+                <h2>Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" id="firstName" name="firstName" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" id="lastName" name="lastName" required><br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Birth</label><br>
+                    <input type="date" required>
+                </div>
+            </section>
+            <section class="adventure-pref">
+                <h2>Adventrue Preferences</h2>
+                <div class="form-group">
+                    <label for="exp-level">Experience Level</label><br>
+                    <select required>
+                        <option>Select your experience level</option>
+                        <option>Rookie</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                        <option>Expert</option>
+                    </select><br>
+                </div>
+                <div class="form-group">
+                    <label for="activities">Preferred Activites</label><br>
+                    <div class="checkbox-group">
+                        <input type="checkbox" class="checkbox-item" id="activities" name="activities"> Hiking<br>
+                        <input type="checkbox" class="checkbox-item" id="activities" name="activities"> Rock Climbing<br>
+                        <input type="checkbox" class="checkbox-item" id="activities" name="activities"> Kayaking<br>
+                        <input type="checkbox" class="checkbox-item" id="activities" name="activities"> Scuba Diving<br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Preferred Trip Duration</label><br>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-item" id="duration" name="duration"> Weekend Trips (2-3 Days)<br>
+                        <input type="radio" class="radio-item" id="duration" name="duration"> Week-long Adventures (5-7 Days)<br>
+                        <input type="radio" class="radio-item" id="duration" name="duration"> Extended Expeditions (2+ Weeks)<br>
+                    </div>
+                </div>
+            </section>
+            <section class="additional-info">
+                <h2>Additional Information</h2>
+                <label for="fit-level">Fitness Level (1-10)</label><br>
+                <input type="range" min="1" max="10" value="5"><br>
+                <label for="about-you">Tell Us about yourself</label><br>
+                <textarea placeholder="Share your adventure experiences and what excites you about joining our club..." id="about-you"></textarea><br>
+                <label for="pfp">Profile Photo</label><br>
+                <input type="file" id="pfp" name="pfp" accept="image/*"><br>
+            </section>
+            <input type="checkbox" id="terms" required> I agree to the Terms and Conditions and Privacy Policy<br>
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+</body>
+</html>
